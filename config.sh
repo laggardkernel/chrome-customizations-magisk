@@ -91,6 +91,7 @@ REPLACE="
 # Construct your own list here, it will overwrite the example
 # !DO NOT! remove this if you don't need to replace anything, leave it empty as it is now
 REPLACE="
+/system/app/ChromeCustomizations
 "
 
 # Removal list from theme ready
@@ -151,6 +152,12 @@ TESTREMOVAL="
 TESTREMOVAL="
 /system/app/ChromeCustomizations
 /system/priv-app/ChromeCustomizations
+"
+
+SPREADREMOVAL="
+ChromeCustomizations.apk
+Chromecustomizations.apk
+chromecustomizations.apk
 "
 
 ##########################################################################################

@@ -438,6 +438,22 @@ if [ -n "$TESTREMOVAL" ]; then
       fi
     done
   done
+
+  for TARGET in $SPREADREMOVAL; do
+    for FILETYPE in d f l; do
+      RESULT=$(find /magisk/* -name "${TARGET}" -type "$FILETYPE" 2>/dev/null)
+      if [ ! -z "$RESULT" ]; then
+        for ITEM in $RESULT; do
+          ui_print "  $ITEM"
+          rm -rf "$ITEM"
+          if [ -f "${ITEM%/*}/.replace" ]; then
+            ui_print "  ${ITEM%/*}"
+            rm -rf "${ITEM%/*}"
+          fi
+        done
+      fi
+    done
+  done
 fi
 
 # Handle removal files after test
