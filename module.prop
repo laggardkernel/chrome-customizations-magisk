@@ -1,0 +1,10 @@
+id=chrome-customizations
+name=Chrome Partner Customizations
+version=v6.0.1
+versionCode=1
+author=Cyanogen
+description=Add back left-coner homepage button in Chrome by chrome partner customizations package, apk built and signed by Cynogen. Minimum SDK 14. Module adapted by laggardkernel.
+support=https://github.com/laggardkernel/chrome-customizations-magisk
+donate=https://github.com/laggardkernel
+cacheModule=false
+template=3
